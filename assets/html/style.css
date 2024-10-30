@@ -1,0 +1,215 @@
+/* @override http://supercorethemes.com/test/topbar/2/style.css */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+body {
+	background: #2f3238;
+	color: #7e7e7e;
+	font-weight: 400;
+	font: 1em/1.4em 'Raleway', Arial, sans-serif;
+}
+a {
+	outline: none;
+	color: #3498db;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #528cb3;
+}
+section {
+}
+.content {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+/* PAGE STYLE */
+div.page {
+	max-width: 640px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+/* ******************* */
+/* **** BAR STYLE **** */
+/* ******************* */
+.fixed {
+	position: fixed !important;
+	
+	/* TOP BAR Shadow */
+	/*
+	box-shadow: 0 0 40px #222;
+	-webkit-box-shadow: 0 0 40px #222;
+	-moz-box-shadow: 0 0 40px #222;
+	*/
+}
+/* BANNER LINK */
+#bar_container {
+	height: 130px;
+	width: 100%;
+	z-index: 0;
+	display: table;
+	background: url(dog.jpg) left center no-repeat #ff4747;
+	-o-background-size:25% auto;
+	-webkit-background-size:25% auto;
+	-moz-background-size:25% auto;
+	background-size:25% auto;
+	top: 0px;
+	right: 0;
+	position: fixed;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* TEXT and IMAGE */
+#bar_container div.bar_text {
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	/*
+	padding: 30px 20px 0;
+	*/
+	margin: 0 auto;
+	z-index: 0;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-right: 30%;
+	padding-left: 30%;
+}
+#bar_container div.bar_text h4 {
+	margin: 0;
+	color: #ffffff;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: 1.6em;
+	text-shadow: 0 1px 1px rgba(1, 1, 1, 0.33);
+}
+#bar_container div.bar_text h2 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font-weight: normal;
+	font-style: normal;
+	color: #ffffff;
+	padding-top: 13px;
+	font-size: 1.2em;
+	text-shadow: 0 1px 1px rgba(1, 1, 1, 0.33);
+	line-height: 1.2em;
+}
+/* BUTTON */
+#bar_container div.bar_button {
+	color: #ff4747;
+	background-color: #ffffff;
+	font-size: 0.9em;
+	width: 97px;
+	height: 37px;
+	position: absolute;
+	top: 50%;
+	right: 15%;
+	margin-top: -15px;
+	float: right;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	
+}
+/* CLOSE */
+#bar_container #close {
+	width: 19px;
+	height: 19px;
+	background: url(close_2.png) no-repeat;
+	background-size: 19px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	opacity: 0.4;
+	z-index: 1;
+}
+#bar_container #close:hover {
+	opacity: 1;
+}
+/* CLOSE MOBILE */
+#bar_container #close_mobile {
+	/* This is shown only when we go mobile */
+	display: none;
+	width: 19px;
+	height: 19px;
+	background: url(close_2.png) no-repeat;
+	background-size: 19px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	opacity: 0.4;
+	z-index: 1;
+}
+/* CREDITS */
+#bar_container #credits {
+	font-family: sans-serif;
+	width: 84px;
+	height: 37px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	opacity: 0.6;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+	font-size: 0.7em;
+	line-height: 1.4em;
+}
+#credits p strong {
+	/*
+	font-size: 1.1em;
+	letter-spacing: 0.4em;
+	*/
+}
+#bar_container #bar_container #credits strong{
+	
+}
+#bar_container #credits:hover {
+	opacity: 1;
+}
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	#bar_container {
+		background-image: none;
+	}
+	#bar_container div.bar_button {
+		right: 6%;
+	}
+	#bar_container #credits{
+		display: none;
+	}
+	#bar_container div.bar_text {
+		width: 100%;
+	}
+	#bar_container div.bar_text {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	/* Hide default close button that is shown with MouseOver using jQUery -> for the mobile we use: #close_mobile */
+	#close {
+		display: none;
+	}
+	#close_mobile {
+		display: block !important;
+	}
+	#bar_container div.bar_text {
+		font-size: 0.9em;
+		text-align: left;
+		padding-right: 35%;
+		
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+}
